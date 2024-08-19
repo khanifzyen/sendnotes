@@ -100,6 +100,12 @@ Gambar 3. Membuat Repo Baru `sendnotes` di Github
 
 12. Selanjutnya adalah konfigurasi https://fly.io, merupakan platform deployment sehingga aplikasi yang kita buat bisa diakses dari manapun. Anda bisa skip ini, tetapi disarankan anda mengikuti karena nanti akan dilakukan konfigurasi CI/CD dimana kode yang dicommit di github akan secara otomatis diload di dalam mesin di fly.io. Buka https://fly.io, lakukan Sign Up dengan akun Github anda.
 
-13. Selanjutnya anda diminta untuk mengisi informasi kartu kredit, anda bisa menggunakan Jenius atau Bank Jago, buat virtual credit card baru pada bank digital tersebut.
+13. Selanjutnya anda diminta untuk mengisi informasi kartu kredit, anda bisa menggunakan Jenius atau Bank Jago, buat virtual credit card baru pada bank digital tersebut. Untuk biayanya adalah $0, nanti akan ditagih ketika sudah ada usage (plan pay as you go).
 
-14.
+14. Selanjutnya instal flyctl, merupakan command line tools dimana kita bisa deploy aplikasi kita ke fly.io melalui command line. Jalankan perintah berikut:
+
+    ```bash
+    powershell -Command "iwr https://fly.io/install.ps1 -useb | iex"
+    ```
+
+15. Jalankan perintah `fly launch` untuk mendeploy aplikasi kita ke fly.io
