@@ -84,8 +84,22 @@ Gambar 2. Tampilan Dashboard
 ![alt text](img/03-new-repo-sendnotes.PNG)
 Gambar 3. Membuat Repo Baru `sendnotes` di Github
 
-11. Buka `terminal` pada vscode di project `sendnotes`, jalankan perintah berikut untuk menambahkan remote repository
+11. Buka `terminal` pada vscode di project `sendnotes`, jalankan perintah berikut:
 
     ```bash
     D:\laragon\src\sendnotes> git remote add origin https://github.com/khanifzyen/sendnotes.git
+
+    D:\laragon\src\sendnotes> git branch -M main
+
+    D:\laragon\src\sendnotes> git add .
+
+    D:\laragon\src\sendnotes> git commit -m "initial commit"
+
+    D:\laragon\src\sendnotes> git push -u origin main
     ```
+
+12. Selanjutnya adalah konfigurasi https://fly.io, merupakan platform deployment sehingga aplikasi yang kita buat bisa diakses dari manapun. Anda bisa skip ini, tetapi disarankan anda mengikuti karena nanti akan dilakukan konfigurasi CI/CD dimana kode yang dicommit di github akan secara otomatis diload di dalam mesin di fly.io. Buka https://fly.io, lakukan Sign Up dengan akun Github anda.
+
+13. Selanjutnya anda diminta untuk mengisi informasi kartu kredit, anda bisa menggunakan Jenius atau Bank Jago, buat virtual credit card baru pada bank digital tersebut.
+
+14.
